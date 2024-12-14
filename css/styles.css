@@ -129,7 +129,7 @@ body {
 
 header {
     overflow: hidden;
-    padding: 64px 20px;
+    padding: 64px 20px 174px;
     position: relative;
     width: 100%;
 }
@@ -158,7 +158,7 @@ header {
     left: 170px;
     position: absolute;
     top: -50px;
-    transform: scale(2, 1.5);
+    transform: scale(2);
 }
 
 .header__bg-tablet-img,
@@ -172,12 +172,13 @@ header {
     height: 490px;
     justify-content: center;
     width: 100%;
+    margin-top: -100px;
 }
 
 .container__bg-img {
     background-color: #191826;
     background-image: url(../assets/bg-pattern-2.svg);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     height: 490px;
     margin-top: -330px;
@@ -187,5 +188,105 @@ header {
 }
 
 section {
+    background-color: #fa7453;
     padding: 48px 20px;
+    margin-top: -100px;
+}
+
+.section__title {
+    color: #191826;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 24px;
+}
+
+.section__description {
+    color: #191826;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+
+.section__price {
+    align-items: center;
+    color: #191826;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 48px;
+}
+
+.section__price-number {
+    color: #191826;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-right: 16px;
+}
+
+.section__btn-ios,
+.section__btn-android {
+    align-items: center;
+    border-radius: 12px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    line-height: 180%;
+    padding: 16px 32px;
+    width: 335px;
+}
+
+.section__btn-ios {
+    background-color: #191826;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.section__btn-android {
+    background-color: #fff;
+    color: #191826;
+    margin-bottom: 48px;
+}
+
+.section__btn-ios-img,
+.section__btn-android-img {
+    margin-right: 8px;
+}
+
+footer {
+    padding: 64px 20px 80px;
+}
+
+.footer__logo {
+    margin-bottom: 32px;
+}
+
+.footer__container {
+    margin-bottom: 32px;
+}
+
+.footer__copyright,
+.footer__contact {
+    color: #191826;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.footer__contact-link {
+    color: #191826;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.footer__social-links {
+    display: flex;
+    gap: 32px;
 }
