@@ -16,54 +16,61 @@
 
 <body>
 
-  <header>
-    <img src="./assets/logo.svg" alt="Equalizer logo" class="header__logo">
-    <h1 class="header__title">We make your music sound extraordinary</h1>
-    <p class="header__description">A system audio equalizer specifically designed for Android and iOS. Freely tune the
-      way your music sounds with a professional grade parametric EQ & volume mixer. Control
-      bass, mids, treble, gain control, reverb, and more!</p>
-    <img src="./assets/bg-main-mobile.png" alt="Equalizer illustration" class="header__bg-mobile-img">
-    <img src="./assets/bg-main-desktop.png" alt="Equalizer illustration" class="header__bg-desktop-img">
-    <img src="./assets/bg-main-tablet.png" alt="Equalizer illustration" class="header__bg-tablet-img">
-  </header>
+  <div class="bg-container">
+    <div class="bg-container__img">
+      <img src="./assets/bg-main-mobile.png" alt="Equalizer illustration" class="bg-container__img-mobile">
+      <img src="./assets/bg-main-tablet.png" alt="Equalizer illustration" class="bg-container__img-tablet">
+      <img src="./assets/bg-main-desktop.png" alt="Equalizer illustration" class="bg-container__img-desktop">
+    </div>
+    <header>
+      <img src="./assets/logo.svg" alt="Equalizer logo" class="header__logo">
+      <h1 class="header__title">We make your music sound extraordinary</h1>
+      <p class="header__description">A system audio equalizer specifically designed for Android and iOS. Freely tune the
+        way your music sounds with a professional grade parametric EQ & volume mixer. Control
+        bass, mids, treble, gain control, reverb, and more!</p>
+      <img src="./assets/bg-pattern-1.svg" alt="Background pattern" class="header__bg-pattern-1">
 
-  <div class="container__img"><img src="./assets/illustration-app.png" alt="" class="container-1__app-img"></div>
-
-  <main>
-    <div class="container__bg-img"></div>
-
-    <section class="section">
-      <h2 class="section__title">Premium EQ</h2>
-      <p class="section__description">Get expert-level control with a robust equalizer, volume mixer, and spatial audio.
-        Take
-        your listening experience to a whole new level and access all our incredible features!</p>
-      <p class="section__price"><span class="section__price-number">$4</span> / month</p>
-      <button class="section__btn-ios">
-        <img src="./assets/icon-apple.svg" alt="Apple logo" class="section__btn-ios-img">
-        iOS Download</button>
-      <button class="section__btn-android">
-        <img src="./assets/icon-android.svg" alt="Android logo" class="section__btn-android-img">
-        Android Download</button>
-    </section>
-  </main>
+    </header>
+    <div class="container__img"><img src="./assets/illustration-app.png" alt="" class="container-1__app-img"></div>
+    <main>
+      <div class="container__bg-img"></div>
+      <section class="section">
+        <h2 class="section__title">Premium EQ</h2>
+        <p class="section__description">Get expert-level control with a robust equalizer, volume mixer, and spatial
+          audio.
+          Take
+          your listening experience to a whole new level and access all our incredible features!</p>
+        <p class="section__price"><span class="section__price-number">$4</span> / month</p>
+        <button class="section__btn-ios">
+          <img src="./assets/icon-apple.svg" alt="Apple logo" class="section__btn-ios-img">
+          iOS Download</button>
+        <button class="section__btn-android">
+          <img src="./assets/icon-android.svg" alt="Android logo" class="section__btn-android-img">
+          Android Download</button>
+      </section>
+    </main>
+  </div>
 
   <footer>
     <img src="./assets/logo.svg" alt="Equalizer logo" class="footer__logo">
     <div class="footer__container">
-      <p class="footer__copyright">All rights reserved © Equalizer 2021</p>
-      <p class="footer__contact">Have any problems? Contact us via social media or email us at</p>
-      <a href="#" class="footer__contact-link">equalizer@example.com</a>
-    </div>
-    <div class="footer__social-links">
-      <a href="#" class="footer__social-link">
-        <img src="./assets/icon-facebook.svg" alt="Facebook logo" class="footer__social-link-img">
-      </a>
-      <a href="#" class="footer__social-link">
-        <img src="./assets/icon-instagram.svg" alt="Instagram logo" class="footer__social-link-img">
-      </a>
-      <a href="#" class="footer__social-link">
-        <img src="./assets/icon-twitter.svg" alt="Twitter logo" class="footer__social-link-img">
-      </a>
+      <div class="footer__contact-container">
+        <p class="footer__copyright">All rights reserved © Equalizer 2021</p>
+        <p class="footer__contact">Have any problems? Contact us via social media or email us at</p>
+        <a href="#" class="footer__contact-link">equalizer@example.com</a>
+      </div>
+
+      <div class="footer__social-links">
+        <a href="#" class="footer__social-link">
+          <img src="./assets/icon-facebook.svg" alt="Facebook logo" class="footer__social-link-img">
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="./assets/icon-instagram.svg" alt="Instagram logo" class="footer__social-link-img">
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="./assets/icon-twitter.svg" alt="Twitter logo" class="footer__social-link-img">
+        </a>
+      </div>
     </div>
   </footer>
 
