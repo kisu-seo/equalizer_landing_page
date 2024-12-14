@@ -1,0 +1,191 @@
+/***
+ * CSS Reset
+ * A modern CSS reset that removes default browser styles
+ * Version: 1.11.3 (2024-08-25)
+ * Source: https://github.com/elad2412/the-new-css-reset
+ */
+
+/* Base reset - removes all styles except display */
+*:where( :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Typography */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Interactive elements */
+a,
+button {
+    cursor: revert;
+}
+
+/* Lists */
+ol,
+ul,
+menu,
+summary {
+    list-style: none;
+}
+
+ol {
+    counter-reset: revert;
+}
+
+/* Media */
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    loading: lazy;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Form elements */
+input,
+textarea {
+    -webkit-user-select: auto;
+}
+
+textarea {
+    white-space: revert;
+}
+
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* Preformatted text */
+:where(pre) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+/* Placeholders */
+::placeholder {
+    color: unset;
+}
+
+/* Hidden elements */
+:where([hidden]) {
+    display: none;
+}
+
+/* Content editable */
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+/* Draggable elements */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+/* Modal dialogs */
+:where(dialog:modal) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+/* Details summary */
+::-webkit-details-marker {
+    display: none;
+}
+
+/* Base styles */
+html {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 375px;
+    min-height: 100vh;
+}
+
+header {
+    overflow: hidden;
+    padding: 64px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.header__logo {
+    margin-bottom: 64px;
+}
+
+.header__title {
+    color: #191826;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 100%;
+    margin-bottom: 40px;
+}
+
+.header__description {
+    color: #191826;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.header__bg-mobile-img {
+    left: 170px;
+    position: absolute;
+    top: -50px;
+    transform: scale(2, 1.5);
+}
+
+.header__bg-tablet-img,
+.header__bg-desktop-img {
+    display: none;
+}
+
+.container__img {
+    align-items: center;
+    display: flex;
+    height: 490px;
+    justify-content: center;
+    width: 100%;
+}
+
+.container__bg-img {
+    background-color: #191826;
+    background-image: url(../assets/bg-pattern-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 490px;
+    margin-top: -330px;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+section {
+    padding: 48px 20px;
+}
